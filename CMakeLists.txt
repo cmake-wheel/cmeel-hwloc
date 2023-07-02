@@ -13,7 +13,8 @@ ExternalProject_Add(
   DOWNLOAD_EXTRACT_TIMESTAMP OFF
   CONFIGURE_COMMAND "./configure" "--prefix=${CMAKE_INSTALL_PREFIX}"
   BUILD_COMMAND "make"
-  INSTALL_COMMAND "make" "install")
+  INSTALL_COMMAND "make" "install"
+  COMMAND "${CMAKE_COMMAND}" "-E" "rm" "${CMAKE_INSTALL_PREFIX}/lib/lib${NAME}.la")
 
 # dummy file for install target
 install(FILES README.md DESTINATION share/cmeel-${NAME}/)
