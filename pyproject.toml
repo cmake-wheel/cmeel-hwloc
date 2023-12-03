@@ -12,6 +12,7 @@ version = "2.9.3"
 [project.urls]
 homepage = "https://github.com/cmake-wheel/cmeel-hwloc"
 repository = "https://github.com/cmake-wheel/cmeel-hwloc.git"
+upstream = "https://www.open-mpi.org/projects/hwloc/"
 
 [tool.cmeel]
 has-sitelib = false
